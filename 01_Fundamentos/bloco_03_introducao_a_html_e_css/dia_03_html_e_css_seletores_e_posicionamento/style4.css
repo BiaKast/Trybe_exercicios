@@ -1,0 +1,41 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+  background-color: lightslategrey;
+}
+
+div:nth-child(odd){
+font-style: italic;
+}
+h3{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+div {
+  padding: 5%;
+}
+
+div:hover {
+  border: 5px solid #b32900;
+}
+
+div:hover:nth-child(3) {
+  color: chartreuse;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div:hover:nth-child(4) {
+  color: #d14334;
+}
+div:hover:nth-child(5) {
+  color: #620e5d;
+}
+div:hover:nth-child(6) {
+  color: #241714;
+}
+div:hover:nth-child(7) {
+  color: #ffeec2;
+}
+
+div:nth-child(5) {
+  font-size: 50px;
+}
