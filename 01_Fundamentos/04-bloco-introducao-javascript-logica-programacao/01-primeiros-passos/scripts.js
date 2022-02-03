@@ -34,7 +34,7 @@ else{
 } */
 
 //Retorne o maior de três: Questão 3
-const valor1 = 45;
+/* const valor1 = 45;
 const valor2 = 69;
 const valor3 = 58;
 
@@ -49,4 +49,17 @@ else if (valor3 > valor1 && valor3 > valor2) {
 }
 else {
     console.log ('todos os valores são iguais');
+} */
+
+//Questão 4
+const inserir = 0 ;
+
+if (inserir > 0) {
+    console.log ('positivo');
+}
+else if (inserir < 0) {
+    console.log ('negativo');
+}
+else {
+    console.log ('zero');
 }
