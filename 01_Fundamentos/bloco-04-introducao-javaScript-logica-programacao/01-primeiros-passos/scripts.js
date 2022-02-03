@@ -101,4 +101,5 @@ else {
     console.log ('Erro! Este nome não corresponde a uma peça ou não está escrita devidamente.')
 }
 
+//Questão 7
 
