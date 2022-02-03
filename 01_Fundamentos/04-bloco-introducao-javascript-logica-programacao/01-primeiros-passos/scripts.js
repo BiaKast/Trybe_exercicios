@@ -52,7 +52,7 @@ else {
 } */
 
 //Questão 4
-const inserir = 0 ;
+/* const inserir = 0 ;
 
 if (inserir > 0) {
     console.log ('positivo');
@@ -62,4 +62,43 @@ else if (inserir < 0) {
 }
 else {
     console.log ('zero');
+} */
+
+//Questão 5
+/* const lado1 = 63;
+const lado2 = 100;
+const lado3 = 17;
+
+let soma 
+
+if (lado1 >= 0 && lado2 >= 0 && lado3 >= 0) {
+    soma =  lado1 + lado2 + lado3;
 }
+
+if ( lado1 < 0 || lado2 < 0 || lado3 < 0){
+   return console.log ('erro');
+}
+
+if (soma === 180 ){
+   return console.log ('true');
+}
+else {
+   return console.log ('false');
+} */
+
+// Questão 6
+const peca = 'Torre';
+
+let nameMinuscula = peca.toLowerCase('')
+
+if (nameMinuscula === 'peão' || nameMinuscula === 'torre' || nameMinuscula === 'bispo' || nameMinuscula == 'rainha' || nameMinuscula === 'rei'){
+    console.log ('Todas as peças, exceto o cavalo movem-se em linha reta: horizontal, vertical ou diagonal');
+}
+else if (nameMinuscula === 'cavalo') {
+    console.log ('O cavalo se move em L maiúsculo, duas casas na vertical e uma na horizontal ou duas casas na horizontal e uma na vertical ')
+}
+else {
+    console.log ('Erro! Este nome não corresponde a uma peça ou não está escrita devidamente.')
+}
+
+
