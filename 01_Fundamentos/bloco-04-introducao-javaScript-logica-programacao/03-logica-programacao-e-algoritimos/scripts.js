@@ -1,11 +1,8 @@
 //exercise.js
-let fruits = [3, 4, 10, 1, 12];
-let sum = 0;
+let fatorial = 10;
+let retorno = 1;
 
-for (let i = 0; i < fruits.length; i +=1){
-    sum += fruits[i];
-}if (sum > 15) {
-    console.log(sum);
-} else if (sum <= 15){
-    console.log('valor menor que 16');
+for (let index = 1; index < fatorial; index+=1) {
+    retorno *= index;
 }
+console.log(retorno);
