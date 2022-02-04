@@ -37,7 +37,7 @@ for (let verificar = 0; verificar < numbers.length; verificar +=1){
 }
 console.log(valor); */
 //Questão 6
-let resto = 0;
+/* let resto = 0;
 let impar = 0;
 let par = 0 ;
 
@@ -52,4 +52,28 @@ for (let div of numbers) {
         console.log('nenhum valor ímpar encontrado');
     }
 }
-console.log (impar + ': números ímpares encontrados; ' + par + ': números pares encontrados;');
+console.log (impar + ': números ímpares encontrados; ' + par + ': números pares encontrados;'); */
+//Questão 7
+/* let valor = numbers[0];
+for (let i = 0; i < numbers.length; i +=1){
+  if (numbers[i] < valor){
+    valor = numbers[i];
+  }
+}
+console.log(valor); */
+
+//Questão 8
+let armArray = [];
+for (let b= 1; b <= 25; b +=1){
+  armArray.push(b);
+}
+console.log(armArray);
+
+//Questão 9
+let resultado = [];
+let calculo = 0;
+for (let index = 0; index < armArray.length; index +=1){
+  calculo = armArray[index] / 2;
+  resultado.push (calculo)
+}
+console.log(resultado);
