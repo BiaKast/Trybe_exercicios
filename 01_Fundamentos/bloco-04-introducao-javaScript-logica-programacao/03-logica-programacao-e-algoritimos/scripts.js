@@ -53,7 +53,7 @@ for (let i = 1; i <= numero; i +=1) {
 console.log(numerosPrimos); */
 
 //Questao bonus 1
-let n = 7;
+/* let n = 7;
 let resultado = '';
 let final = 0;
 
@@ -62,4 +62,12 @@ for (let a = 0; a <  n; a +=1){
 }
 for (let i = 1; i <= n; i +=1){
     console.log(resultado)*n;
+}
+ */
+// Questao bonus 2
+let n = 7;
+let resultado = '';
+for (let a = 1; a <= n; a +=1){
+    resultado += '*';
+    console.log(resultado);
 }
