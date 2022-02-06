@@ -65,9 +65,76 @@ for (let i = 1; i <= n; i +=1){
 }
  */
 // Questao bonus 2
-let n = 7;
+/* let n = 7;
 let resultado = '';
 for (let a = 1; a <= n; a +=1){
     resultado += '*';
     console.log(resultado);
+} */
+
+//Questao bonus 3
+/* let n = 5;
+let resultado = '';
+let final = '';
+for (let a = 1; a <= n; a +=1){
+    let espaco = '';
+    let asteristico = '';
+    for (let b = a; b < n; b+=1){
+        espaco += ' ';
+         }
+    
+    for (let u = 1; u <= a; u +=1){
+        asteristico += '*';
+    }
+    resultado = espaco + asteristico;
+    console.log(resultado);
+} */
+// questao bonus 4
+/* let n = 5;
+let resultado = '';
+let final = '';
+for (let a = 1; a <= n; a +=2){
+    let espaco = '';
+    let asteristico = '';
+    for (let b = a ; b <= n; b+=2){
+        espaco += ' ';
+         }
+    
+    for (let u = 1; u <= a; u +=1){
+        asteristico += '*';
+    }
+    resultado = espaco + asteristico;
+    console.log(resultado);
+} */
+//questao 5
+let n = 7;
+let resultado = "";
+
+for (let a = 1; a <= n; a += 2) {
+  let espaco = "";
+  let asteristico = "";
+  let espacoMeio = "";
+  for (let numeroEspaco = a; numeroEspaco <= n; numeroEspaco += 2) {
+    espaco += " ";
+  }
+  if (n !== a) {
+    for (
+      let numeroAsteristico = 2;
+      numeroAsteristico <= a;
+      numeroAsteristico += 1
+    ) {
+      asteristico += "*";
+      for (; numeroAsteristico < a; numeroAsteristico += 1) {
+        asteristico += " ";
+      }
+    }
+  }
+  for (let percorrer = 1; percorrer < n; percorrer += 1) {
+    if (n == a) {
+      asteristico += "*";
+    }
+  }
+  asteristico += "*";
+  resultado = espaco + asteristico;
+  console.log(resultado);
 }
