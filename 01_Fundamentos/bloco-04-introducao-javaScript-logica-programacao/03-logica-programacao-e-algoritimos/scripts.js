@@ -18,7 +18,7 @@ for (let l = 0; l < word.length; l +=1) {
 console.log(restruturar); */
 
 //Questao 3
-let array = ['java', 'javascript', 'python', 'html', 'css'];
+/* let array = ['java', 'javascript', 'python', 'html', 'css'];
 
 let menorPalavra = array[0];
 let maiorPalavra = array[0];
@@ -32,4 +32,22 @@ for (let index = 0; index < array.length; index +=1 ){
     }
 }   
 console.log(maiorPalavra);
-console.log(menorPalavra);
+console.log(menorPalavra); */
+
+//Questao 4
+let numero = 50;
+
+let numerosPrimos = [];
+for (let i = 1; i <= numero; i +=1) {
+    let procurando = 0;
+
+    for(let a = 1; a <= i; a +=1){
+        if (i % a == 0){
+        procurando +=1;
+        }
+    }
+    if (procurando == 2) {
+        numerosPrimos.push(i);
+        }
+}
+console.log(numerosPrimos);
