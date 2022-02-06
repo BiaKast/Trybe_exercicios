@@ -35,7 +35,7 @@ console.log(maiorPalavra);
 console.log(menorPalavra); */
 
 //Questao 4
-let numero = 50;
+/* let numero = 50;
 
 let numerosPrimos = [];
 for (let i = 1; i <= numero; i +=1) {
@@ -50,4 +50,16 @@ for (let i = 1; i <= numero; i +=1) {
         numerosPrimos.push(i);
         }
 }
-console.log(numerosPrimos);
+console.log(numerosPrimos); */
+
+//Questao bonus 1
+let n = 7;
+let resultado = '';
+let final = 0;
+
+for (let a = 0; a <  n; a +=1){
+    resultado += '*';
+}
+for (let i = 1; i <= n; i +=1){
+    console.log(resultado)*n;
+}
