@@ -45,29 +45,48 @@
 //     return indiceDoMenorNumero;
 // }
 // console.log(descobrirMenorNumero(arrayNumeros));
-let nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
-function nomeComMaisCaracteres (array){
-    let palavra = '';
-    let verificar = 0;
-    let  resultado = '';
-    for(let index = 0; index < array.length; index += 1){
-        palavra = array[index];
-        let tamanhoPalavra = 0;
-        for (let index2 = 1; index2 <= palavra.length; index2 += 1){
-            tamanhoPalavra = [index2];
-            if (tamanhoPalavra > verificar){
-                verificar = tamanhoPalavra;
-                if(verificar){
-                    resultado = palavra;
-                }
-            }
+//Questao 4
+// let nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+// function nomeComMaisCaracteres (array){
+//     let palavra = '';
+//     let verificar = 0;
+//     let  resultado = '';
+//     for(let index = 0; index < array.length; index += 1){
+//         palavra = array[index];
+//         let tamanhoPalavra = 0;
+//         for (let index2 = 1; index2 <= palavra.length; index2 += 1){
+//             tamanhoPalavra = [index2];
+//             if (tamanhoPalavra > verificar){
+//                 verificar = tamanhoPalavra;
+//                 if(verificar){
+//                     resultado = palavra;
+//                 }
+//             }
+//         }
+//     }
+//     return resultado;
+// }
+// console.log(nomeComMaisCaracteres(nomes));
+
+//Questao 5
+let arrayInteiros = [2, 3, 2, 5, 8, 2, 3];
+function numeroQueMaisRepete(array) {
+  let resultadoFinal = 0;
+  let numero = 0;
+  let numero2 = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    numero = array[index];
+		let vezesQueApareceu = 0;
+    for (let index2 = 0; index2 < array.length; index2 += 1) {
+      numero2 = array[index2];
+      if (numero === numero2) {
+        vezesQueApareceu += 1;
+      }
+			if (vezesQueApareceu > resultadoFinal) {
+					resultadoFinal = numero;
         }
     }
-    // console.log(resultado);
-    return resultado;
+  }
+	return resultadoFinal;
 }
-console.log(nomeComMaisCaracteres(nomes));
-
-// function verificarTamanhoNome(string) {
-// }
-// console.log(verificarTamanhoNome(palavra));
+console.log(numeroQueMaisRepete(arrayInteiros));
