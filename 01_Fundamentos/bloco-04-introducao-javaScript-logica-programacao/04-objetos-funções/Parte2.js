@@ -30,7 +30,7 @@
 // console.log(descobrirMaiorNumero(arrayNumeros));
 
 //Questao 3
-// let arrayNumeros = [2, 4, 6, 7, 10, 0, -3];
+// let arrayNumeros = [2, 4, 6, 7, -1, 10, 0, -3];
 // function descobrirMenorNumero(numeros) {
 //     let menorNumero = 0 ;
 //     let indiceDoMenorNumero = 0;
@@ -39,7 +39,7 @@
 //             menorNumero = numeros[array]
 //         }
 //         if(menorNumero){
-//             indiceDoMenorNumero = [array]
+//             indiceDoMenorNumero = array
 //          }
 //     }
 //     return indiceDoMenorNumero;
@@ -55,7 +55,7 @@
 //         palavra = array[index];
 //         let tamanhoPalavra = 0;
 //         for (let index2 = 1; index2 <= palavra.length; index2 += 1){
-//             tamanhoPalavra = [index2];
+//             tamanhoPalavra = index2;
 //             if (tamanhoPalavra > verificar){
 //                 verificar = tamanhoPalavra;
 //                 if(verificar){
@@ -69,24 +69,35 @@
 // console.log(nomeComMaisCaracteres(nomes));
 
 //Questao 5
-let arrayInteiros = [2, 3, 2, 5, 8, 2, 3];
-function numeroQueMaisRepete(array) {
-  let resultadoFinal = 0;
-  let numero = 0;
-  let numero2 = 0;
-  for (let index = 0; index < array.length; index += 1) {
-    numero = array[index];
-		let vezesQueApareceu = 0;
-    for (let index2 = 0; index2 < array.length; index2 += 1) {
-      numero2 = array[index2];
-      if (numero === numero2) {
-        vezesQueApareceu += 1;
-      }
-			if (vezesQueApareceu > resultadoFinal) {
-					resultadoFinal = numero;
-        }
-    }
-  }
-	return resultadoFinal;
-}
-console.log(numeroQueMaisRepete(arrayInteiros));
+// let arrayInteiros = [2, 3, 2, 5, 8, 2, 3];
+// function numeroQueMaisRepete(array) {
+//   let resultadoFinal = 0;
+//   let numero = 0;
+//   let numero2 = 0;
+//   for (let index = 0; index < array.length; index += 1) {
+//     numero = array[index];
+// 		let vezesQueApareceu = 0;
+//     for (let index2 = 0; index2 < array.length; index2 += 1) {
+//       numero2 = array[index2];
+//       if (numero === numero2) {
+//         vezesQueApareceu += 1;
+//       }
+// 			if (vezesQueApareceu > resultadoFinal) {
+// 					resultadoFinal = numero;
+//         }
+//     }
+//   }
+// 	return resultadoFinal;
+// }
+// console.log(numeroQueMaisRepete(arrayInteiros));
+
+//Questão 6
+// let n = 5;
+// function somatorioDeTodosNumeros(valor) {
+// 	let sun = 0;
+// 	for(let index = 1; index <= valor; index += 1){
+// 		sun += index;
+// 	} 
+// 	return sun;
+// }
+// console.log(somatorioDeTodosNumeros(n))
