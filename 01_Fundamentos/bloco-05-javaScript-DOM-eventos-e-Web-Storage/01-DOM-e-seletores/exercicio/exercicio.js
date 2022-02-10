@@ -8,3 +8,9 @@ function daquiA2Anos(inserir) {
 }
 let texto = document.getElementsByTagName("p");
 console.log(daquiA2Anos(texto));
+
+let color = document.getElementsByClassName("main-content");
+function corMainContent(valor) {
+  valor[0].style.backgroundColor = "rgb(76,164,109)";
+}
+console.log(corMainContent(color));
