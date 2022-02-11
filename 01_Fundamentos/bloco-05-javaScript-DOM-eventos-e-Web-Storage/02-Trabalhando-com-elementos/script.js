@@ -1,4 +1,4 @@
-function inserirBody(valor) {
+function inserirNoBody(valor) {
   let novaTag = document.createElement("h1");
   novaTag.innerText = "Exercício 5.2 - JavaScript DOM";
  
@@ -10,7 +10,7 @@ function inserirBody(valor) {
   valor.appendChild(segundaTag);
 }
 let body = document.getElementsByTagName("body")[0];
-console.log(inserirBody(body));
+console.log(inserirNoBody(body));
 
 //questão3
 function inserirMain(valor2) {
@@ -21,6 +21,20 @@ function inserirMain(valor2) {
 
     element.appendChild(creatMain);
   }
+  return document.getElementsByClassName("center-content");
 }
 let main = document.getElementsByClassName("main-content");
 console.log(inserirMain(main));
+
+//questão 4
+function paragrafoSection(p) {
+    for (let index = 0; index < p.length; index += 1) {
+        let element = p[index];
+        let creatParagrafo = document.createElement('p');
+        creatParagrafo.innerText = 'adineretion dendi won a cant dragadu.'
+
+        element.appendChild(creatParagrafo);
+    }
+}
+let pText = document.getElementsByClassName("center-content");
+console.log(paragrafoSection(pText));
