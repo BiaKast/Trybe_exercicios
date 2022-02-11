@@ -10,7 +10,7 @@ function inserirNoBody(valor) {
   valor.appendChild(segundaTag);
 }
 let body = document.getElementsByTagName("body")[0];
-console.log(inserirNoBody(body));
+inserirNoBody(body);
 
 //questão3 e 5 e 6
 function filhosDeMain(valor2) {
@@ -35,7 +35,7 @@ function filhosDeMain(valor2) {
   }
 }
 let main = document.getElementsByClassName("main-content");
-console.log(filhosDeMain(main));
+filhosDeMain(main);
 
 //questão 4
 function paragrafoSection(p) {
@@ -48,7 +48,7 @@ function paragrafoSection(p) {
   }
 }
 let pText = document.getElementsByClassName("center-content");
-console.log(paragrafoSection(pText));
+paragrafoSection(pText);
 
 //Questão 7
 function imgFilhoDeLefetContent(i) {
@@ -62,7 +62,7 @@ function imgFilhoDeLefetContent(i) {
   }
 }
 let section1 = document.getElementsByClassName("left-content");
-console.log(imgFilhoDeLefetContent(section1));
+imgFilhoDeLefetContent(section1);
 
 //Questão 8
 let list = [
@@ -84,9 +84,18 @@ function filhoDeRightContent(section, ii) {
   for (let index = 0; index < ii.length; index += 1) {
     let element = ii[index];
     let criandoFilhosList = document.createElement("li");
-    criandoFilhosList.innerText = element
+    criandoFilhosList.innerText = element;
     criandoList.appendChild(criandoFilhosList);
   }
 }
 let section2 = document.getElementsByClassName("right-content")[0];
 filhoDeRightContent(section2, list);
+
+//Questão 9
+function repetirH3(pai) {
+  for (let index = 1; index <= 3; index += 1) {
+    let criandoH3 = document.createElement("h3");
+    pai[0].appendChild(criandoH3);
+  }
+}
+repetirH3(main);
