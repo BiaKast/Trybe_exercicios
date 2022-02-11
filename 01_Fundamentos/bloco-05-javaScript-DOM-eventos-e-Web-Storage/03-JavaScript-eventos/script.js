@@ -43,3 +43,13 @@ function diasDoCalendario(array, pai) {
   }
 }
 diasDoCalendario(dezDaysList, paiUl);
+
+//Questão 2
+function criandoFeriados(nome, pai2) {
+    let buttonCreat = document.createElement('button');
+    buttonCreat.innerText = nome;
+    buttonCreat.className = 'btn-holiday';
+    pai2.appendChild(buttonCreat);
+}
+let paiDiv = document.querySelector('.buttons-container');
+criandoFeriados("Feriados", paiDiv);
