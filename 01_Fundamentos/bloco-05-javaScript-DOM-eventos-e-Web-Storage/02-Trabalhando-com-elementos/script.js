@@ -23,7 +23,7 @@ function filhosDeMain(valor2) {
 
     if (index += 1) {
       let criandoSection1 = document.createElement("section");
-      criandoSection1.className = "left-content ";
+      criandoSection1.className = "left-content";
       element.appendChild(criandoSection1);
     }
 
@@ -50,4 +50,15 @@ function paragrafoSection(p) {
 let pText = document.getElementsByClassName("center-content");
 console.log(paragrafoSection(pText));
 
-
+//Questão 7
+function imgFilhoDeLefetContent(i) {
+    for (let index = 0; index < i.length; index += 1) {
+        let element = i[index];
+        
+        let criandoImg = document.createElement('img')
+        criandoImg.src = 'https://picsum.photos/200';
+        element.appendChild(criandoImg);
+    }
+}
+let section1 = document.getElementsByClassName('left-content');
+console.log(imgFilhoDeLefetContent(section1));
