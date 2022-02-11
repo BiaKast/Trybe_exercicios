@@ -101,3 +101,12 @@ function repetirH3(pai) {
   }
 }
 repetirH3(main);
+
+// function removerMain(array) {
+//   for (let index = 0; index < array.length; index += 1) {
+//     let element = index;
+//     if (element === 1) {
+//       array.removeChild(element);
+//     }
+//   }
+// removerMain(main);
