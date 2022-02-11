@@ -1,6 +1,7 @@
 function inserirNoBody(valor) {
   let novaTag = document.createElement("h1");
   novaTag.innerText = "Exercício 5.2 - JavaScript DOM";
+  novaTag.className = "title";
 
   valor.appendChild(novaTag);
 
@@ -95,6 +96,7 @@ filhoDeRightContent(section2, list);
 function repetirH3(pai) {
   for (let index = 1; index <= 3; index += 1) {
     let criandoH3 = document.createElement("h3");
+    criandoH3.className = "description ";
     pai[0].appendChild(criandoH3);
   }
 }
