@@ -20,6 +20,7 @@ function filhosDeMain(valor2) {
 
     let criandoSection0 = document.createElement("section");
     criandoSection0.className = "center-content";
+    criandoSection0.style.backgroundColor = "green";
     element.appendChild(criandoSection0);
 
     if ((index += 1)) {
@@ -31,6 +32,7 @@ function filhosDeMain(valor2) {
     if ((index += 1)) {
       let criandoSection2 = document.createElement("section");
       criandoSection2.className = "right-content";
+      criandoSection2.style.marginRight = "auto";
       element.appendChild(criandoSection2);
     }
   }
