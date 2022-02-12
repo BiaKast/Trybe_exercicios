@@ -52,6 +52,7 @@ function criandoFeriados(nome, pai2) {
   buttonCreat.innerText = nome;
   buttonCreat.className = "btn-holiday";
   pai2.appendChild(buttonCreat);
+  
 }
 let paiDiv = document.querySelector(".buttons-container");
 criandoFeriados("Feriados", paiDiv);
@@ -61,13 +62,22 @@ function evento() {
   let button = document.querySelector(".buttons-container");
   button.addEventListener("click", function () {
     const holidays = document.querySelectorAll(".holiday");
-    for (let index = 0; index < holidays.length; index +=1) {
-      if(holidays[index].style.background === 'blue'){
-        holidays[index].style.background = 'rgb(238,238,238)'
-      }else{
-        holidays[index].style.background = 'blue'
+    for (let index = 0; index < holidays.length; index += 1) {
+      if (holidays[index].style.background === "blue") {
+        holidays[index].style.background = "rgb(238,238,238)";
+      } else {
+        holidays[index].style.background = "blue";
       }
     }
   });
 }
 evento();
+
+//Questão 4
+function sextou(string, pai2) {
+      let sextou = document.createElement("button")
+      sextou.innerText = string;
+      sextou.id = 'btn-friday';
+      pai2.appendChild(sextou)
+}
+sextou('Sexta-feira', paiDiv)
