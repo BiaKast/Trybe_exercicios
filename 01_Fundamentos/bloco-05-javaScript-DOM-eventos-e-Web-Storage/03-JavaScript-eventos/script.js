@@ -82,8 +82,10 @@ function sextou(string, pai2) {
 sextou("Sexta-feira", paiDiv);
 
 //Questão 5
-const daysNumbers = [4,11,18,25];
+const daysNumbers = [4, 11, 18, 25];
+
 let buttonSextou = document.querySelector("#btn-friday");
+
 buttonSextou.addEventListener("click", function () {
   const fridays = document.getElementsByClassName("day friday");
   for (let index = 0; index < fridays.length; index += 1) {
@@ -93,4 +95,14 @@ buttonSextou.addEventListener("click", function () {
       fridays[index].innerText = daysNumbers[index];
     }
   }
+});
+//Questão 6
+const dayList = document.getElementById("days");
+
+dayList.addEventListener("mouseover", function (event) {
+      event.target.style.fontSize = "150%";
+});
+
+dayList.addEventListener("mouseout", function (event) {
+  event.target.style.fontSize = "110%"
 });
