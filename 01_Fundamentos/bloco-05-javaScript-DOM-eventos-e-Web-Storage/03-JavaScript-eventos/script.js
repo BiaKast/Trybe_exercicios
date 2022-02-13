@@ -100,9 +100,37 @@ buttonSextou.addEventListener("click", function () {
 const dayList = document.getElementById("days");
 
 dayList.addEventListener("mouseover", function (event) {
-      event.target.style.fontSize = "150%";
+  event.target.style.fontSize = "150%";
 });
 
 dayList.addEventListener("mouseout", function (event) {
-  event.target.style.fontSize = "110%"
+  event.target.style.fontSize = "110%";
 });
+// Questão 7
+
+function novoProjeto(paiDeSpan, nome) {
+  let newSpan = document.createElement("span");
+  newSpan.className = "tarefa";
+  newSpan.innerText = nome;
+  newSpan.style.fontSize = "20px"
+  paiDeSpan.appendChild(newSpan);
+}
+let tasks = document.querySelector(".my-tasks");
+novoProjeto(tasks, "Projeto:");
+
+// let span = document.querySelector(".tarefa");
+function buttonSpan(valorSpan, cor) {
+  let projeto = document.createElement("div");
+  projeto.className = "task"
+  projeto.style.backgroundColor = cor;
+  projeto.style.width = "10%";
+  projeto.style.height = "45%";
+  projeto.style.borderRadius = "50%";
+  valorSpan.appendChild(projeto);
+}
+buttonSpan(tasks, "orange");
+
+// let styleButton = document.querySelector(".bnt-tarefas")
+// styleButton.addEventListener("click", function () {
+
+// });
