@@ -21,7 +21,7 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 //Questão 1
-const paiUl = document.querySelector("ul");
+const paiUl = document.querySelector("#days");
 const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
@@ -33,7 +33,7 @@ function diasDoCalendario(array, pai) {
 
     let dias = document.createElement("li");
     dias.innerText = element;
-    dias.className = "days";
+    dias.className = "day";
     pai.appendChild(dias);
     if (element === 4 || element === 11 || element === 18 || element === 25) {
       dias.className += " friday";
@@ -52,21 +52,20 @@ function criandoFeriados(nome, pai2) {
   buttonCreat.innerText = nome;
   buttonCreat.className = "btn-holiday";
   pai2.appendChild(buttonCreat);
-  
 }
 let paiDiv = document.querySelector(".buttons-container");
 criandoFeriados("Feriados", paiDiv);
 
 //Questão 3
 function evento() {
-  let button = document.querySelector(".buttons-container");
+  let button = document.querySelector(".btn-holiday");
   button.addEventListener("click", function () {
     const holidays = document.querySelectorAll(".holiday");
     for (let index = 0; index < holidays.length; index += 1) {
-      if (holidays[index].style.background === "blue") {
+      if (holidays[index].style.background === "white") {
         holidays[index].style.background = "rgb(238,238,238)";
       } else {
-        holidays[index].style.background = "blue";
+        holidays[index].style.background = "white";
       }
     }
   });
@@ -75,9 +74,23 @@ evento();
 
 //Questão 4
 function sextou(string, pai2) {
-      let sextou = document.createElement("button")
-      sextou.innerText = string;
-      sextou.id = 'btn-friday';
-      pai2.appendChild(sextou)
+  let sextou = document.createElement("button");
+  sextou.innerText = string;
+  sextou.id = "btn-friday";
+  pai2.appendChild(sextou);
 }
-sextou('Sexta-feira', paiDiv)
+sextou("Sexta-feira", paiDiv);
+
+//Questão 5
+const daysNumbers = [4,11,18,25];
+let buttonSextou = document.querySelector("#btn-friday");
+buttonSextou.addEventListener("click", function () {
+  const fridays = document.getElementsByClassName("day friday");
+  for (let index = 0; index < fridays.length; index += 1) {
+    if (fridays[index].innerText !== "SEXTOU!") {
+      fridays[index].innerText = "SEXTOU!";
+    } else {
+      fridays[index].innerText = daysNumbers[index];
+    }
+  }
+});
