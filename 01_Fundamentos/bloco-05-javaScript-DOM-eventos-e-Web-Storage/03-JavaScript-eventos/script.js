@@ -107,30 +107,36 @@ dayList.addEventListener("mouseout", function (event) {
   event.target.style.fontSize = "110%";
 });
 // Questão 7
-
 function novoProjeto(paiDeSpan, nome) {
   let newSpan = document.createElement("span");
   newSpan.className = "tarefa";
   newSpan.innerText = nome;
-  newSpan.style.fontSize = "20px"
+  newSpan.style.fontSize = "20px";
   paiDeSpan.appendChild(newSpan);
 }
 let tasks = document.querySelector(".my-tasks");
 novoProjeto(tasks, "Projeto:");
 
-// let span = document.querySelector(".tarefa");
 function buttonSpan(valorSpan, cor) {
   let projeto = document.createElement("div");
-  projeto.className = "task"
+  projeto.className = "task";
   projeto.style.backgroundColor = cor;
   projeto.style.width = "10%";
   projeto.style.height = "45%";
   projeto.style.borderRadius = "50%";
   valorSpan.appendChild(projeto);
 }
-buttonSpan(tasks, "orange");
+buttonSpan(tasks, "grey");
 
-// let styleButton = document.querySelector(".bnt-tarefas")
-// styleButton.addEventListener("click", function () {
+let addCorTarefa = document.querySelector(".task")
+addCorTarefa.addEventListener("click", function (event) {
+  if (event.target.className === "task selected") {
+    addCorTarefa.className = "task";
+    event.target.style.backgroundColor = "grey";
+  } else {
+    addCorTarefa.className = "task selected";
+  event.target.style.backgroundColor = "red";
+  }
+});
 
-// });
+let tarefaSelecionada = document.getElementById("days");
