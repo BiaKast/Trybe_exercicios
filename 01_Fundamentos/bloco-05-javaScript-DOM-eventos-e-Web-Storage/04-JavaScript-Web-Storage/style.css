@@ -5,14 +5,36 @@
   text-align: center;
 }
 .butao {
-  margin-left: 20px;
+  margin-left: 10px;
   width: 70px;
   height: 30px;
   background-color: darkcyan;
   color: aliceblue;
 }
 .styleLi {
-  margin-left: 15px;
+  margin-left: 5px;
+  width: 80px;
+  height: 20px;
+}
+#paiDeLi{
+    position:absolute;
+}
+
+.butao2 {
+  margin-left: 22%;
+  width: 80px;
+  height: 30px;
+  background-color: darkcyan;
+  color: aliceblue;
+  position:absolute;
+}
+#paiDeFonte{
+    position:absolute;
+    margin-top: 25px;
+    margin-left: 20%;
+}
+.fontButton {
+  margin-left: 25%;
   width: 80px;
   height: 20px;
 }
