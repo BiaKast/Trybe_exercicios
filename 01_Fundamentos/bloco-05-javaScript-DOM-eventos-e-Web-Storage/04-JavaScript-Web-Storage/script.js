@@ -55,8 +55,8 @@ window.onload = function () {
         body.style.backgroundColor = "#429867";
       }
       if (index == 3) {
-        localStorage.setItem("backgroundColor", "#fad9a6");
-        body.style.backgroundColor = "#fad9a6";
+        localStorage.setItem("backgroundColor", "#e6e1cd");
+        body.style.backgroundColor = "#e6e1cd";
       }
     });
   }
@@ -76,7 +76,7 @@ function corDeTexto(paiButaoTexto) {
 let paiButaoTexto = document.querySelector(".pai");
 corDeTexto(paiButaoTexto);
 
-let corTextoList = ["Azul", "Vermelho", "Amarelo", "Padrão"];
+let corTextoList = ["Branco", "Vermelho", "Amarelo", "Padrão"];
 function filhosDePaiTexto(neutro, array) {
   let div2 = document.createElement("div");
   div2.id = "paiDeFonte";
@@ -129,7 +129,20 @@ for (let index = 0; index < mudarCorTexto.length; index += 1) {
     });
   }
   if (localStorage.color) {
-  tagColor.style.color = localStorage.getItem("color");
-}
+    tagColor.style.color = localStorage.getItem("color");
+  }
 }
 
+//3
+function receptor(paiValor) {
+  let escrever = document.createElement("input");
+  escrever.id = "styleEscrever";
+  paiValor.appendChild(escrever);
+
+  let buttonReceber = document.createElement("button");
+  buttonReceber.id = "styleButton";
+  buttonReceber.innerHTML = 'Adicionar tamanho da fonte'
+  paiValor.appendChild(buttonReceber)
+}
+let paiReceptor = document.querySelector("#receber");
+receptor(paiReceptor);

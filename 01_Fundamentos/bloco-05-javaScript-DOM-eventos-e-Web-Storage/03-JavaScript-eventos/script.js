@@ -128,14 +128,14 @@ function buttonSpan(valorSpan, cor) {
 }
 buttonSpan(tasks, "grey");
 
-let addCorTarefa = document.querySelector(".task")
+let addCorTarefa = document.querySelector(".task");
 addCorTarefa.addEventListener("click", function (event) {
   if (event.target.className === "task selected") {
     addCorTarefa.className = "task";
     event.target.style.backgroundColor = "grey";
   } else {
     addCorTarefa.className = "task selected";
-  event.target.style.backgroundColor = "red";
+    event.target.style.backgroundColor = "red";
   }
 });
 

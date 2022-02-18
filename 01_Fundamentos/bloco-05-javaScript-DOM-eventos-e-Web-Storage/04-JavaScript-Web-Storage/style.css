@@ -16,8 +16,8 @@
   width: 80px;
   height: 20px;
 }
-#paiDeLi{
-    position:absolute;
+#paiDeLi {
+  position: absolute;
 }
 
 .butao2 {
@@ -26,15 +26,22 @@
   height: 30px;
   background-color: darkcyan;
   color: aliceblue;
-  position:absolute;
+  position: absolute;
 }
-#paiDeFonte{
-    position:absolute;
-    margin-top: 25px;
-    margin-left: 20%;
+#paiDeFonte {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 20%;
 }
 .fontButton {
   margin-left: 25%;
   width: 80px;
   height: 20px;
+}
+#styleButton {
+  width: 180px;
+  height: 30px;
+  background-color: darkcyan;
+  color: aliceblue;
+  position: absolute;
 }
