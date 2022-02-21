@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+  margin: 20px 10%;
+}
+
+#titulo {
+  background-color: #67434f;
+  height: 80px;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+#radios , #data,
+#qualquer , #caixa, #caixa2 , #textarea {
+  margin: 20px;
+}
+
+#data input[type="date"] {
+  background-color: #9b8e7e;
+  color: aliceblue;
+  border-radius: 30px;
+}
+
+#qualquer input[type="text"],
+input[type="email"] {
+  border-radius: 30px;
+  background-color: #9b8e7e;
+  color: aliceblue;
+  width: 100%;
+}
+::placeholder{
+    padding-left: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  background-color: #9b8e7e;
+  border-radius: 20px;
+}
