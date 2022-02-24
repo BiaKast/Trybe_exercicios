@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+body {
+  background-image: url(https://redepara.com.br/imagens/galeria/118804/thumbs/25c22e47a2394458bc29f3c17dd23a02.png);
+  background-blend-mode:color-dodge;
+}
+
+.header-container {
+  background-color: #172a38;
+  display: flex;
+}
+
+.header-container img{
+  width: 268px;
+  order: 1;
+}
+
+.header-container nav{
+  width: 500px;
+  order: 2;
+  display: flex;
+  flex-grow: 1;
+  align-self: center;
+}
+
+li:nth-child(2){
+  flex-grow: 800px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-container {
+  display: flex;
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-container li {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  list-style: none;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 700px;
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+  color:#fbf6d0;
+}
+
+.movie-container h2{
+  background:#000;
+  opacity: 0.9;
+  margin-left: 40%;
+  width: 30%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #172a38;
+  border: black solid 1px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+  width: 16%;
+  /* height: 10ch; */
+  flex-grow: 1;
+  color:#fbf6d0;
+  background-size: cover;
+}
+
+li:hover{
+  opacity: 1;
+  color:#fbf6d0;
+  font-size: 1.5rem;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 350px;
+  flex-grow: 1;
+  background-color: #172a38;
+  color:#fbf6d0;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.aside-container h3, h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 10px 0;
+  text-align: justify;
+}
