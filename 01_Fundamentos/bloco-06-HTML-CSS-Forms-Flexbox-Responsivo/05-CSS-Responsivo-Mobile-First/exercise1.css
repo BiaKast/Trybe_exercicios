@@ -1,0 +1,187 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #141414;
+  color: whitesmoke;
+  font-size: x-large;
+}
+
+article {
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+}
+
+section {
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 30px 0;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+  body p {
+    font-size: 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  article {
+    margin-left: 10%;
+    width: 80%;
+    text-align: justify;
+    padding: 7px;
+  }
+
+  article p:nth-child(2) {
+    margin-top: 0;
+  }
+
+  hr {
+    width: 30%;
+    border: none;
+    background-color: whitesmoke;;
+    height: 1px;
+  }
+
+  section {
+    display: flex;
+  }
+
+  section .coluna1,
+  .coluna2 {
+    width: 50%;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  header {
+    text-align: center;
+  }
+  
+  article {
+    margin-left: 10%;
+    max-width: 80%;
+    text-align: justify;
+    padding: 7px;
+  }
+
+  hr{
+    width: 40%;
+    border: none;
+    background-color: whitesmoke;;
+    height: 1px;
+  }
+
+  img{
+    width: 20%;
+  }
+  
+
+  section{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coluna1 figure:nth-child(1){
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .coluna1 figure:nth-child(2){
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .coluna1 figure:nth-child(3){
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+  }
+
+  .coluna2 figure:nth-child(1){
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 55%;
+    margin-left: 33%;
+  }
+
+  .coluna2 figure:nth-child(2){
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    margin-top: 70%;
+    margin-left: 32%;
+  }  
+
+  .coluna2 figure:nth-child(3){
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    margin-top: 70%;
+  }
+}
