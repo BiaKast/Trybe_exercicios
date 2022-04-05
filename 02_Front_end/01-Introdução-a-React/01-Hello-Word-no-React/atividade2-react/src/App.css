@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header{
+  color: aliceblue;
+  background-color: chocolate;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.card:nth-child(1){
+  border: solid black 2px;
+  margin-bottom: 10px;
+  color: red;
+  width: max-content;
+}
+
+.card:nth-child(2){
+  margin-bottom: 10px;
+  color: blue;
+  border: solid black 2px;
+  width: max-content;
+}
+
+.card:nth-child(3){
+  margin-bottom: 10px;
+  color: green;
+  border: solid black 2px;
+  width: max-content;
+}
+
+.card:nth-child(4){
+  margin-bottom: 10px;
+  color: darkmagenta;
+  border: solid black 2px;
+  width: max-content;
+}
+
+.footer {
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+  background-color: #282c34;
+  bottom: 0;
+  position: absolute;
+}
