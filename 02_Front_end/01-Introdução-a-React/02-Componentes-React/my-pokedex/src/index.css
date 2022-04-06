@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.catalago {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.titulo {
+  margin-top: 0;
+  background-color: #43B6E0;
+  text-align: center;
+  box-shadow: 0px 5px 5px black;
+}
+
+.card {
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 30px 5px black;
+  background-color: #FF3013;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+  border: solid black 3px;
+  display: flex;
+  width: 50vh;
+}
+
+.pikomon {
+  border: solid black 3px;
+  background-color: white;
+  border-radius: 10px;
+}
