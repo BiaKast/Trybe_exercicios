@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@reach/combobox": "^0.16.5",
+    "axios": "^0.26.1"
+  }
+}
