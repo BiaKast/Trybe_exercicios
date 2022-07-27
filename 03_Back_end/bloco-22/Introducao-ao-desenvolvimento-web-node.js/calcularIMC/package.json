@@ -1,0 +1,18 @@
+{
+  "name": "calcularimc",
+  "version": "1.0.0",
+  "description": "calcular a massa corporal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "imc": "node indexM.js",
+    "velocidade": "node indexV.js",
+    "sorteio": "node indexA.js"
+  },
+  "author": "bianca",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
